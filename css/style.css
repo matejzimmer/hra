@@ -1,0 +1,58 @@
+#skore{
+    text-align: center;
+    size: 1cm;
+    
+}
+#click{
+    text-align: center;
+}
+#hra{
+    height: 700px;
+    width: 1200px;
+    margin: auto;
+    border: 2px solid black;
+    background-image: url(../pics/skola.png) ;
+}
+#zak{
+    height: 250px;
+    width: 170px;
+    position: relative;
+    top: 400px;
+    right: -100px;
+    background-image: url(../pics/klucina.png);
+    
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes jump{
+    0%{top: 400px;}
+    30%{top: 150px;}
+    70%{top: 150px;}
+    100%{top: 400px;}
+}
+#lavice{
+    height: 210px;
+    width: 130px;
+    position: relative;
+    top: 200px;
+    left: 1030px;
+    background-image: url(../pics/Bez_názvu-removebg-preview.png);
+
+    
+}
+.animace{
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 1030px}
+    100%{left: 0px}
+}
+footer{
+    text-align: center;
+    margin: 100px;
+}
+h1{
+    text-align: center;
+}
