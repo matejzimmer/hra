@@ -32,27 +32,26 @@
     100%{top: 400px;}
 }
 #lavice{
-    height: 210px;
-    width: 130px;
+    height: 110px;
+    width: 80px;
     position: relative;
-    top: 200px;
-    left: 1030px;
+    top: 250px;
+    left: 1100px;
     background-image: url(../pics/Bez_názvu-removebg-preview.png);
-
+    animation: lavice 1s infinite linear;
     
 }
-.animace{
-    animation: block 1.5s infinite linear;
-}
 
-@keyframes block{
+
+@keyframes lavice{
     0%{left: 1030px}
     100%{left: 0px}
 }
-footer{
+footer, p{
     text-align: center;
-    margin: 100px;
+    margin: 10px;
 }
-h1{
+h1, h2{
     text-align: center;
 }
+
