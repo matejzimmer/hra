@@ -13,12 +13,22 @@ var umrti = setInterval(function() {
     let laviceLeva = parseInt(window.getComputedStyle(lavice).getPropertyValue("left"));
     if(laviceLeva<250 && laviceLeva>0 && zakTop>=400){
         lavice.style.animation = "none";
-        alert("Zemřel si. Tvoje skore: "+ Math.floor(pocitadlo/100));
+        alert("Zemřel si. Tvoje skore: "+ Math.floor(pocitadlo/10));
         pocitadlo=0;
         lavice.style.animation = "block 1s infinite linear";
-    }else{
+    }
+    if(pocitadlo==10000){
+        alert("Vyhrál si, gratujuli");
+    }
+    else{
         pocitadlo++;
-        document.getElementById("skore").innerHTML = Math.floor(pocitadlo/100);
+        document.getElementById("skore").innerHTML = Math.floor(pocitadlo/10);
     }
     
 }, 10);
+
+function vyhra(){
+    if(pocitadlo==50){
+        alert("Vyhrál si, gratujuli");
+    }
+}
